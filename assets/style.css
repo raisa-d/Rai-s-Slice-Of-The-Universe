@@ -79,6 +79,13 @@ body {
     src: url(/assets/fonts/Sripnoxhz.ttf);
 }
 
+@font-face {
+    font-family: 'Web';
+    src: url(/assets/fonts/mostean.regular.ttf);
+}
+
+.web-font {font-family: 'Web', monospace;}
+
 .emo-font {
     font-family: 'Emo', monospace;
 }
@@ -97,14 +104,6 @@ body {
     font-size: 1.2rem;
     position: relative;
     bottom: 2.5rem;
-}
-
-/* underwater background */
-#main {
-    background: url(/assets/images/underwater.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
 }
 
 /* GIF STYLING */
@@ -165,64 +164,191 @@ body {
     animation: swimTopRightToTopLeft 20s linear infinite;
 }
 
-    /* KEYFRAMES */
-    @keyframes swimRight {
-        0% {
-            left: -15rem;
-            top: 50%;
+/* KEYFRAMES */
+@keyframes swimRight {
+    0% {
+        left: -15rem;
+        top: 50%;
+    }
+    50% {
+        left: 50%;
+        top: 20%;
+    }
+    100% {
+        left: 100%;
+        top: 50%;
+    }
+}
+
+@keyframes swimLeft {
+    0% {
+        left: 100%;
+        top: 50%;
+    }
+    50% {
+        left: 50%;
+        top: 70%;
+    }
+    100% {
+        left: -15rem; 
+        top: 10%;
+    }
+}
+
+@keyframes topRightToBottom {
+    0% {
+        left: -15rem;
+        top: 10%;
+    }
+    50% {
+        left: 60%;
+        top: 50%;
+    }
+    100% {
+        right: 20%;
+        top: 150%;
+    }
+}
+
+@keyframes swimTopRightToTopLeft {
+    0% {
+        left: 100%; 
+        top: 10%; 
+    }
+    50% {
+        left: 60%; 
+        top: 1%; 
+    }
+    100% {
+        left: -15rem;
+        top: 5%;
+    }
+}
+
+/* SLICE OF UNIVERSE PAGE */
+
+/* main h1 */
+#rai {
+    font-size: 6rem;
+    margin:1rem 0;
+}
+
+/* background */
+#bubbles {
+    background: url(/assets/images/bubbles.gif);
+}
+
+/* sections with solid white border */
+.candy-nav, #main-container header, #main-container {
+    border: 1px solid white;
+}
+
+#main-container {
+    margin-top: 2rem;
+    height: 80rem;
+    width: 90rem;
+    color: white;
+    background: black;
+}
+
+    #main-container header {
+        text-align:center;
+        padding: 0;
+        margin: 2rem;
+    }
+        #main-container header p {
+            margin:1rem 0;
         }
-        50% {
-            left: 50%;
-            top: 20%;
-        }
-        100% {
-            left: 100%;
-            top: 50%;
-        }
+
+/* nav link styles */  
+.candy-nav {
+    margin: 0 2rem 2rem 2rem;
+}
+
+.candy-nav ul {
+    margin:0;
+    padding:1rem;
+}
+
+    .candy-nav li {
+        list-style: none;
     }
 
-    @keyframes swimLeft {
-        0% {
-            left: 100%;
-            top: 50%;
+        .candy-link {
+            display: inline-block;
+            width: 9.5rem;
+            height: 9.5rem;
+            background: url('/assets/images/candyheart.png') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            line-height: 9rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: black;
+            text-decoration: none; 
         }
-        50% {
-            left: 50%;
-            top: 70%;
-        }
-        100% {
-            left: -15rem; 
-            top: 10%;
-        }
-    }
+        
+            .candy-link:hover {
+            transform: rotate(10deg);
+            filter: drop-shadow(0 0 1rem rgba(255, 182, 193, 0.8));
+            }
 
-    @keyframes topRightToBottom {
-        0% {
-            left: -15rem;
-            top: 10%;
-        }
-        50% {
-            left: 60%;
-            top: 50%;
-        }
-        100% {
-            right: 20%;
-            top: 150%;
-        }
-    }
+                .candy-link:active {
+                transform: scale(0.95) rotate(0);
+                }  
+  
+/* underwater background */
+#main {
+    background: url(/assets/images/underwater.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
 
-    @keyframes swimTopRightToTopLeft {
-        0% {
-            left: 100%; 
-            top: 10%; 
-        }
-        50% {
-            left: 60%; 
-            top: 1%; 
-        }
-        100% {
-            left: -15rem;
-            top: 5%;
-        }
-    }
     
+
+    /* MEDIA QUERIES */
+    @media all and (max-width: 1030px) {
+        #main-container {
+            width: 80rem;
+        }
+    }
+
+    @media all and (max-width: 820px) {
+        #main-container {
+            width: 70rem;
+        }
+    }
+
+    @media all and (max-width: 740px) {
+        #main-container {
+            width: 60rem;
+        }
+    }
+
+    @media all and (max-width: 630px) {
+        #main-container {
+            width: 50rem;
+        }
+    }
+
+    @media all and (max-width: 515px) {
+        #main-container {
+            width: 40rem;
+            height: 90rem;
+        }
+    }
+
+    @media all and (max-width: 430px) {
+        #main-container {
+            width: 35rem;
+            height: 90rem;
+        }
+    }
+
+    @media all and (max-width: 320px) {
+        #main-container {
+            width: 25rem;
+            height: 90rem;
+        }
+    }
