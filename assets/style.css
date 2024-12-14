@@ -10,9 +10,8 @@ small {font-size: 1.2rem;}
 
 body {
     margin: 0;
-    height: 100dvh;
+    min-height: 100dvh;
     width: 100%;
-    overflow: hidden;
     font-family: monospace;
 }
 
@@ -83,6 +82,13 @@ body {
     font-family: 'Web';
     src: url(/assets/fonts/mostean.regular.ttf);
 }
+
+@font-face {
+    font-family: 'Cake';
+    src: url(/assets/fonts/eracake.regular.ttf);
+}
+
+.cake-font {font-family: 'Cake', monospace;}
 
 .web-font {font-family: 'Web', monospace;}
 
@@ -239,16 +245,16 @@ body {
 }
 
 /* sections with solid white border */
-.candy-nav, #main-container header, #main-container {
-    border: 1px solid white;
+.candy-nav, #main-container header, #main-container, .chatbox-container, .the100, .apocalypse, #bio, #garden, .collage-section {
+    border: 1px dashed white;
 }
 
 #main-container {
     margin-top: 2rem;
-    height: 80rem;
     width: 90rem;
     color: white;
     background: black;
+    height: 170dvh;
 }
 
     #main-container header {
@@ -263,6 +269,7 @@ body {
 /* nav link styles */  
 .candy-nav {
     margin: 0 2rem 2rem 2rem;
+    height: 50rem;
 }
 
 .candy-nav ul {
@@ -296,16 +303,99 @@ body {
                 .candy-link:active {
                 transform: scale(0.95) rotate(0);
                 }  
-  
+
+/* Chatbox */
+.chatbox-container {
+    height: 50rem;
+    margin: 0 2rem;
+    background: url(/assets/images/pinksparkles.webp);
+}
+    .chatbox-container iframe {
+        height: 50rem;
+    }
+
+/* Bio/Intro */
+#bio, #bio p {
+    margin:0;
+    height: 25rem;
+    width:40rem;
+}
+
+    #bio p {
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+
+/* Garden */
+#garden {
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+    #garden h2 {
+        font-size: 4rem; 
+        margin:0 0 3rem 0;
+        color: rgb(109, 214, 109);
+        text-align: center;
+    }
+
+        .planter {
+            border: 1rem solid rgb(247, 130, 247);
+            background-color: rgb(71, 16, 16);
+            height: 12rem;
+            width: 12rem;
+        }
+            .plant {
+                position: relative;
+                height: 12rem;
+            }
+            .plant1 {
+                bottom: 4rem;
+            }
+                .plant2 {
+                    bottom: 4rem;
+                    left: 1.5rem;
+                }
+
+                    .plant3 {
+                        bottom: 8rem;
+                        height: 15rem;
+                        right: 1rem;
+                    }
+
+/* The 100 & Apocalypse Box */
+.the100 {
+    height: 30rem;
+    width: 40rem;
+    margin: 0 2rem;
+}
+    .the100 p {
+        margin:0;
+        font-size: 1.6rem;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.535);
+    }
+
+        .apocalypse {
+            height: 10rem;
+            margin: 2rem 0;
+            background: url(/assets/images/boom.gif)  no-repeat center, url(/assets/images/boom2.webp) no-repeat left, url(/assets/images/boom2.webp) no-repeat right, url(/assets/images/fire2.webp), url(/assets/images/fire.avif);
+            background-size: contain;
+        }
+
+/* collage section */
+.collage-section {
+    height: 40rem;
+}
+
 /* underwater background */
 #main {
     background: url(/assets/images/underwater.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
-
-    
 
     /* MEDIA QUERIES */
     @media all and (max-width: 1030px) {

@@ -16,6 +16,7 @@ HTML, CSS, Google Drawings for digital collages
 - Water Ripples: (jQuery Ripples Plugin)[https://github.com/sirxemic/jquery.ripples/tree/master]
 - Fonts: (1001 Fonts)[https://www.1001fonts.com/]
 - Gifs: (GifCities)[https://gifcities.org/] and (Giphy)[https://giphy.com/]
+- Mermaid Gifs: (Mermaid_Lux on Giphy)[https://giphy.com/Mermaid_Lux]
 
 ## Optimizations
 
