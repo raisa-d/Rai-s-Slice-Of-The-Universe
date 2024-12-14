@@ -139,7 +139,7 @@ body {
 }
 
 /* ANIMATIONS */
-#body::after, #main::after, #main-container::before, #main::before, #div::after, #boat-div::before, #header::before {
+#body::after, #main::after, #main-container::before, #main::before, #div::after, #boat-div::before, #header::before, .contact-section::before, .credits-section::before, .collage-section::before, .the100::before {
     content: '';
     position: absolute;
     background-size: contain;
@@ -188,6 +188,43 @@ body {
     animation: swimLeftMiddle 10s linear infinite;
 }
 
+.credits-section::before {
+    width: 25rem;
+    height: 25rem;
+    background: url('/assets/images/mermaid7.webp') no-repeat center center; 
+    transform: scaleX(-1);
+    animation: swimLow 20s linear infinite;
+    z-index: 2;
+}
+
+.the100::before {
+    width: 20rem;
+    height: 20rem;
+    background: url('/assets/images/merman2.webp') no-repeat center center; 
+    background-size: contain;
+    transform: rotate(-90deg);
+    animation: swimRightSide 15s linear infinite;
+    z-index: 2;
+}
+
+.collage-section::before {
+    width: 25rem;
+    height: 25rem;
+    background: url('/assets/images/merman3.webp') no-repeat center center; 
+    transform: rotate(90deg);
+    animation: swimLeftSide 15s linear infinite;
+    z-index: 2;
+}
+
+.contact-section::before {
+    width: 25rem;
+    height: 25rem;
+    background: url('/assets/images/mermaid8.webp') no-repeat center center; 
+    transform: scaleX(-1);
+    animation: swimRightMiddle 15s linear infinite;
+    z-index: 2;
+}
+
 #boat-div::before {
     top: 50rem;
     width: 25rem;
@@ -211,6 +248,52 @@ body {
     100% {
         left: 100%;
         top: 50%;
+    }
+}
+
+@keyframes swimRightMiddle {
+    0% {
+        left: -10rem;
+        top: 90%;
+    }
+    25% {
+        left: 30%;
+        top: 80%;
+    }
+    50% {
+        left: 50%;
+        top: 70%;
+    }
+    75% {
+        left: 80%;
+        top: 60%;
+    }
+    100% {
+        left: 100%;
+        top: 50%;
+    }
+}
+
+@keyframes swimLow {
+    0% {
+        left: -10rem;
+        top: 200%;
+    }
+    25% {
+        left: 30%;
+        top: 205%;
+    }
+    50% {
+        left: 50%;
+        top: 180%;
+    }
+    75% {
+        left: 80%;
+        top: 190%;
+    }
+    100% {
+        left: 100%;
+        top: 220%;
     }
 }
 
@@ -288,6 +371,36 @@ body {
     }
 }
 
+@keyframes swimLeftSide {
+    0% {
+        left: -5rem; 
+        top: 200%; 
+    }
+    50% {
+        left: -5rem; 
+        top: 50%; 
+    }
+    100% {
+        left: -5rem;
+        top: 1%;
+    }
+}
+
+@keyframes swimRightSide {
+    0% {
+        right: 0%; 
+        top: 1%; 
+    }
+    50% {
+        right: 0%; 
+        top: 50%; 
+    }
+    100% {
+        right: 0%;
+        top: 200%;
+    }
+}
+
 /* SLICE OF UNIVERSE PAGE */
 /* background */
 #bubbles {
@@ -302,7 +415,7 @@ body {
 }
 
 /* sections with solid white border */
-.candy-nav, #main-container header, #main-container, .chatbox-container, .the100, .apocalypse, #bio, #garden, .collage-section, .contact-section {
+.candy-nav, #main-container header, #main-container, .chatbox-container, .the100, #bio, #garden, .collage-section, .contact-section, .credits-section {
     border: .1rem dashed white;
 }
 
@@ -423,28 +536,29 @@ body {
                     }
 
 /* The 100 & Apocalypse Box */
-.the100 {
-    height: 30rem;
+.column {
     width: 40rem;
     margin: 0 2rem;
+}
+
+.the100 {
+    margin: 2rem 0;
 }
     .the100 p {
         margin:0;
         font-size: 1.6rem;
         padding: 1rem;
-        background: rgba(0, 0, 0, 0.535);
     }
 
         .apocalypse {
             height: 10rem;
-            margin: 2rem 0;
             background: url(/assets/images/boom.gif)  no-repeat center, url(/assets/images/boom2.webp) no-repeat left, url(/assets/images/boom2.webp) no-repeat right, url(/assets/images/fire2.webp), url(/assets/images/fire.avif);
             background-size: contain;
         }
 
 /* contact section */
 /* styling target links */
-#contact:target, #collages:target, #bio:target {
+#contact:target, #collages:target, #bio:target, #credits:target {
     box-shadow: 0 0 15px 5px rgb(109, 214, 109);
     transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
     border-color: rgb(109, 214, 109);
@@ -469,6 +583,30 @@ body {
                 margin: 1rem 0;
                 text-align:center;
             }
+
+/* credits section */
+.credits-section {
+    padding: 2rem 0;
+    height: 27rem;
+}
+
+    .credits-section > * {margin:0;}
+
+        .credits-section h3 {
+            text-align: center;
+        }
+
+        .credits-section ul {margin: 1.5rem 0; }
+
+            .credits-section ul, .credits-section li {
+                font-size: 2rem;
+                color: rgb(109, 214, 109);
+                list-style:circle;
+            }
+
+                .credits-section a {
+                    color: rgb(109, 214, 109);
+                }
 
 /* collage section */
 .collage-section {
