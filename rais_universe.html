@@ -17,7 +17,7 @@
             <h1 id="rai" class="emo-font">Rai's Slice Of The Universe</h1>
         </header>
         <!-- first row -->
-        <div class="flex">
+        <div class="flex" id="row1">
             <nav class="candy-nav flex flex-col justify-center">
                 <ul class="flex flex-col">
                     <li><a href="#bio" class="candy-link">About</a></li>
@@ -26,7 +26,7 @@
                     <li><a href="#credits" class="candy-link">Credits</a></li>
                 </ul>
             </nav>
-            <div class="flex flex-col">
+            <div class="flex flex-col" id="bio-garden">
                 <!-- bio/intro section -->
                 <section id="bio">
                     <p>
@@ -36,7 +36,7 @@
                 <section id="garden" class="cake-font flex flex-col space-evenly">
                     <h2>My Garden</h2>
                     <!-- row of plants -->
-                    <div class="flex space-evenly">
+                    <div class="flex space-evenly" id="plant-row">
                         <div class="planter flex justify-center align-center">
                             <img src="/assets/images/plant2.webp" alt="Growing Bluebell Gif" class="plant2 plant">
                         </div>
@@ -51,7 +51,7 @@
             </div>
             <!-- chatbox container -->
             <div class="chatbox-container">
-                <iframe src="https://www3.cbox.ws/box/?boxid=3542810&boxtag=N2shwU" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+                <iframe src="https://www3.cbox.ws/box/?boxid=3542810&boxtag=N2shwU" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" id="chatbox"></iframe>	
             </div>
         </div>
         <!-- Row 2 -->
@@ -180,6 +180,20 @@
             -ms-overflow-style: scrollbar;
         }
      </style>
-     <script src="/assets/js/main.js"></script>
+     <script>
+        // Popup for collage pictures
+function showModal(imageUrl) {
+    const modal = document.getElementById("retro-modal");
+    const modalImage = document.getElementById("modal-image");
+    modalImage.src = imageUrl;
+    modal.style.display = "flex";
+}
+
+function closeModal() {
+    const modal = document.getElementById("retro-modal");
+    modal.style.display = "none";
+}
+
+     </script>
 </body>
 </html>

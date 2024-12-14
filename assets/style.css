@@ -8,9 +8,10 @@ h2 {font-size: 3.2rem;}
 div, p, ul, ol, li {font-size: 2.4rem;}
 small {font-size: 1.2rem;}
 
+
 body {
     margin: 0;
-    min-height: 100dvh;
+    min-height: 100vh;
     width: 100%;
     font-family: monospace;
     overflow-x: hidden;
@@ -213,7 +214,6 @@ body {
     background: url('/assets/images/merman3.webp') no-repeat center center; 
     transform: rotate(90deg);
     animation: swimLeftSide 15s linear infinite;
-    z-index: 2;
 }
 
 .contact-section::before {
@@ -415,7 +415,7 @@ body {
 }
 
 /* sections with solid white border */
-.candy-nav, #main-container header, #main-container, .chatbox-container, .the100, #bio, #garden, .collage-section, .contact-section, .credits-section {
+.candy-nav, #main-container header, #main-container, #chatbox, .the100, #bio, #garden, .collage-section, .contact-section, .credits-section {
     border: .1rem dashed white;
 }
 
@@ -424,6 +424,8 @@ body {
     width: 90rem;
     color: white;
     background: black;
+    min-height: 100vh;
+    padding-bottom: 2rem;
 }
 
     #main-container header {
@@ -477,6 +479,9 @@ body {
 .chatbox-container {
     height: 50rem;
     margin: 0 2rem;
+}
+
+#chatbox {
     background: url(/assets/images/pinksparkles.webp);
 }
     .chatbox-container iframe {
@@ -625,6 +630,7 @@ body {
                 width: 95%;
                 max-width: 44rem;
                 position: relative;
+                height: auto;
             }
 
             .collage-container img {
@@ -709,14 +715,159 @@ body {
     /* MEDIA QUERIES */
     @media all and (max-width: 1030px) {
         #main-container {
+            width: 90rem;
+        }
+
+        @keyframes swimLeftSide {
+            0% {
+                left: -9rem; 
+                top: 100%; 
+            }
+            50% {
+                left: -9rem; 
+                top: 50%; 
+            }
+            100% {
+                left: -9rem;
+                top: 1%;
+            }
+        }
+        
+        @keyframes swimRightSide {
+            0% {
+                right: -5rem; 
+                top: 1%; 
+            }
+            50% {
+                right: -5rem; 
+                top: 50%; 
+            }
+            100% {
+                right: -5rem;
+                top: 100%;
+            }
+        }
+    }
+
+    @media all and (max-width: 950px) {
+        #main-container {
             width: 80rem;
         }
+
+        .credits-section {
+            height: 17rem;
+            padding:0;
+        }
+        
+            .credits-section h3 {
+                font-size: 2.2rem; 
+                margin: 0.5rem 0 0.3rem 0;
+            }
+
+                .credits-section ul {
+                    margin: 0; 
+                }
+
+                    .credits-section li {
+                        font-size: 1.5rem;
+                    }
+            
+            .collage-container {
+                height: 28.8rem;
+            }
+    
     }
 
     @media all and (max-width: 820px) {
         #main-container {
-            width: 70rem;
+            width: 65rem;
         }
+
+        #row1 {
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .candy-nav, .candy-nav ul {
+            -moz-flex-direction: row;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            padding:0;
+        }
+
+        .candy-nav {
+            height: auto;
+        }
+
+        #bio {
+            margin-left: 2rem;
+            width: 30rem;
+        }
+
+        #bio p {
+            font-size: 1.45rem;
+            width: auto;
+        }
+
+        #garden {
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            margin: 0 2rem 2rem 2rem;
+            height: 25rem;
+            width: 30rem;
+        }
+
+        #garden h2 {
+            font-size: 3rem;
+    }
+
+        .planter {
+            margin: 0.5rem;
+            width: 9rem;
+            height: 9rem;
+        }
+
+        .plant1 {
+            height: 11rem;
+            left: -0.2rem;
+            bottom: 5rem;
+        }
+
+        .plant2 {
+            height: 10rem;
+            bottom: 3rem;
+            left: -0.05rem;
+        }
+
+        .plant3 {
+            height: 11rem;
+            bottom: 6rem;
+            right: 1rem;
+        }
+
+        #bio-garden {
+            -moz-flex-direction: row;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            padding:0;
+        }
+
+        .chatbox-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        #chatbox {
+            height: 50rem;
+            width: 40rem;
+        }
+
     }
 
     @media all and (max-width: 740px) {
