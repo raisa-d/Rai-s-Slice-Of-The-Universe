@@ -13,6 +13,7 @@ body {
     min-height: 100dvh;
     width: 100%;
     font-family: monospace;
+    overflow-x: hidden;
 }
 
 /* FLEXBOX */
@@ -170,19 +171,58 @@ body {
     animation: swimTopRightToTopLeft 20s linear infinite;
 }
 
+#div::after {
+    content: '';
+    position: absolute;
+    top: 50rem;
+    width: 25rem;
+    height: 25rem;
+    background: url('/assets/images/mermaid5.webp') no-repeat center center; 
+    background-size: contain;
+    animation: swimLeftMiddle 10s linear infinite;
+}
+
+#boat-div::before {
+    content: '';
+    position: absolute;
+    top: 50rem;
+    width: 25rem;
+    height: 25rem;
+    transform: scaleX(-1);
+    background: url('/assets/images/merman2.webp') no-repeat center center; 
+    background-size: contain;
+    animation: swimTopRight 12s linear infinite;
+    overflow: hidden   
+}
+
 /* KEYFRAMES */
 @keyframes swimRight {
     0% {
-        left: -15rem;
+        left: -10rem;
         top: 50%;
     }
     50% {
         left: 50%;
-        top: 20%;
+        top: 5%;
     }
     100% {
         left: 100%;
         top: 50%;
+    }
+}
+
+@keyframes swimTopRight {
+    0% {
+        left: -10rem;
+        top: 40%;
+    }
+    50% {
+        left: 20%;
+        top: 60%;
+    }
+    100% {
+        left: 100%;
+        top: 10%;
     }
 }
 
@@ -201,19 +241,33 @@ body {
     }
 }
 
+@keyframes swimLeftMiddle {
+    0% {
+        left: 100%;
+        top: 40%;
+    }
+    50% {
+        left: 50%;
+        top: 60%;
+    }
+    100% {
+        left: -15rem; 
+        top: 70%;
+    }
+}
+
 @keyframes topRightToBottom {
     0% {
-        left: -15rem;
+        left: -5rem;
         top: 10%;
     }
     50% {
-        left: 60%;
-        top: 50%;
+        left: 50%;
+        top: 80%;
     }
     100% {
-        right: 20%;
-        top: 150%;
-    }
+        left: 100%;
+        top: 150%;}
 }
 
 @keyframes swimTopRightToTopLeft {
@@ -223,7 +277,7 @@ body {
     }
     50% {
         left: 60%; 
-        top: 1%; 
+        top: 30%; 
     }
     100% {
         left: -15rem;
@@ -254,7 +308,7 @@ body {
     width: 90rem;
     color: white;
     background: black;
-    height: 170dvh;
+    /* height: 100dvh; */
 }
 
     #main-container header {
@@ -390,6 +444,7 @@ body {
 
 /* underwater background */
 #main {
+    background: linear-gradient(to bottom, rgb(154, 241, 219), rgb(106, 155, 213), darkblue);
     background: url(/assets/images/underwater.jpg) no-repeat;
     background-size: cover;
     min-height: 100vh;

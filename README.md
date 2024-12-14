@@ -24,6 +24,9 @@ Make it more accessible
 ## Development Stage
 Working on the homepage currently! Got a lot of practice with animations and keyframes. 
 Next time, I need to figure out why the background image on index.html has a white space to the right of it and isn't covering the whole screen.
+add letter spacing to emo font
+
+    - [ ] add pics of whiteboard drawings to readme and of process before continuing. “for this project, i wanted to follow my creativity and inner child or inner adolescent and make something i’m excited about. the night before the hackathon i was trying to go to bed early but i kept having so many ideas i had to keep going on my phone to write them down. To start, I started drawing out ideas on my whiteboard. And to organize my thoughts a little more and try to pare down the scope. I started coding it before I fully knew my vision, but I knew it would come together as I made it. I multitasked and coded and then scoured resources for gifs and fonts and inspiration. sometimes the assets i found inspired a new feature. i wanted to really create my slice of the universe to have whatever brings me and my inner child joy, to info dump about my favorite things and special interests, to just be myself and let let my personality shine. i have a feeling after the hackathon i  will definitely continue building out this website. some future directions are a full garden page, a list of my yearly read books,  pages inspired by different colors, a rabbit hole starting with an error message “do you want to go down the rabbit hole?” that could lead to an alice in wonderland inspired room of easter eggs. this site is a place where’s it’s weird and queer, a fortress. 
 
 ## Features
 
