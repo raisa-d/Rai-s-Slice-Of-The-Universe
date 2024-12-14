@@ -19,9 +19,11 @@ HTML, CSS, Google Drawings for digital collages
 - Mermaid Gifs: (Mermaid_Lux on Giphy)[https://giphy.com/Mermaid_Lux]
 
 ## Optimizations
+Make it more accessible
 
 ## Development Stage
 Working on the homepage currently! Got a lot of practice with animations and keyframes. 
+Next time, I need to figure out why the background image on index.html has a white space to the right of it and isn't covering the whole screen.
 
 ## Features
 
