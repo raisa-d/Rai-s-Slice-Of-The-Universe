@@ -20,17 +20,17 @@
         <div class="flex">
             <nav class="candy-nav flex flex-col justify-center">
                 <ul class="flex flex-col">
-                    <li><a href="" class="candy-link">Home</a></li>
-                    <li><a href="" class="candy-link">About</a></li>
-                    <li><a href="" class="candy-link">Site Map</a></li>
-                    <li><a href="" class="candy-link">Contact</a></li>
+                    <li><a href="#bio" class="candy-link">About</a></li>
+                    <li><a href="#collages" class="candy-link">Collages</a></li>
+                    <li><a href="#contact" class="candy-link">Contact</a></li>
+                    <li><a href="" class="candy-link">Credits</a></li>
                 </ul>
             </nav>
             <div class="flex flex-col">
                 <!-- bio/intro section -->
                 <section id="bio">
                     <p>
-                        Hi, I'm Rai. This is my Slice Of The Universe. The one place in this reality (I can't speak for the parallel ones) that is just mine, just for me. And you happen to be here too, so come along for the ride! Here, you will find all of my favorite things, from my cat to mermaids to the apocalypse to gardens to collages to you name it.
+                        Hi, I'm Rai (they/them). This is Rai's Slice Of The Universe. The one place in this reality (I can't speak for the parallel ones) that is just mine, just for me. A place where it's safe to be queer, to celebrate your inner child, & to be yourself. And you happen to be here too, so swim along for the ride! Here you'll find my favorite things from mermaids to the apocalypse.
                     </p>
                 </section>
                 <section id="garden" class="cake-font flex flex-col space-evenly">
@@ -38,10 +38,10 @@
                     <!-- row of plants -->
                     <div class="flex space-evenly">
                         <div class="planter flex justify-center align-center">
-                            <img src="/assets/images/plant.webp" alt="Growing Plant Gif" class="plant1 plant">
+                            <img src="/assets/images/plant2.webp" alt="Growing Bluebell Gif" class="plant2 plant">
                         </div>
                         <div class="planter">
-                            <img src="/assets/images/plant2.webp" alt="Growing Bluebell Gif" class="plant2 plant">
+                            <img src="/assets/images/plant.webp" alt="Growing Plant Gif" class="plant1 plant">
                         </div>
                         <div class="planter">
                             <img src="/assets/images/plant3.webp" alt="Daisies" class="plant plant3">
@@ -56,19 +56,65 @@
         </div>
         <!-- Row 2 -->
         <div class="flex">
+            <div>
+                
+            </div>
             <!-- apocalypse section -->
             <div class="flex flex-col">
                 <section class="the100">
                     <p>
-                        The 100 is my all-time favorite show. It has everything. A nuclear apocalypse, constant ethical dilemmas, survival on Earth, life in Space, amazing characters & actors, breathtaking views, a CONLANG called <a href="https://dedalvs.com/work/the-100/trigedasleng_v5.pdf" target="_blank" style="color:fuchsia;">Trigedasleng</a>! I love it so much I even coded a video game set in its universe (in progress, see the github <a href="https://github.com/raisa-d/the-100-rpg" target="_blank" style="color:fuchsia;">here</a>). I love it so much I started learning Trigedasleng and put it in my game. I love it so much I'm going to <a href="https://conageddon.com/" target="_blank" style="color:fuchsia;">Conaggeddon</a>, a convention just for The 100. Read more <a href="https://github.com/raisa-d/the-100-rpg" target="_blank" style="color:fuchsia;">here</a>.
+                        The 100 is my all-time favorite show. It has everything. A nuclear apocalypse, constant ethical dilemmas, survival on Earth, life in Space, amazing characters & actors, breathtaking views, a CONLANG called <a href="https://dedalvs.com/work/the-100/trigedasleng_v5.pdf" target="_blank" style="color:fuchsia;">Trigedasleng</a>! I love it so much I even coded a video game set in its universe (in progress, see the github <a href="https://github.com/raisa-d/the-100-rpg" target="_blank" style="color:fuchsia;">here</a>). I love it so much I started learning Trigedasleng and put it in my game. I love it so much I'm going to <a href="https://conageddon.com/" target="_blank" style="color:fuchsia;">Conaggeddon</a>, a convention just for The 100.
                     </p>
                     <div class="apocalypse"></div>
+                    <!-- Contact -->
+                    <section class="contact-section" id="contact">
+                        <h2 class="web-font">Contact Me</h2>
+                        <ul class="contact-links">
+                            <li>
+                                <a href="https://raisadorzback.netlify.app/" target="_blank">Portfolio Website</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/raisa-d/" target="_blank">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/raisa-d" target="_blank">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/rai__bread" target="_blank">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://bsky.app/profile/rai-bread.bsky.social" target="_blank">Bluesky</a>
+                            </li>
+                        </ul>
+                    </section>
                 </section>
             </div>
-            <!-- collages -->
-            <section class="collage-section">
-                <h1>collages will go here</h1>
+            <!-- collage section -->
+            <section id="collages" class="collage-section flex flex-col align-center space-around">
+                <h2 class="blood-font">My Collages</h2>
+                <p>Click on collages to expand!</p>
+                <div class="collage-container">
+                    <img src="/assets/images/collage.png" alt="Collage" class="collage-thumbnail" onclick="showModal('/assets/images/collage.png')">
+                </div>
+                <div class="collage-container">
+                    <img src="/assets/images/aliceCollage.png" alt="Collage" class="collage-thumbnail" onclick="showModal('/assets/images/aliceCollage.png')">
+                </div>
+                <div class="collage-container">
+                    <img src="/assets/images/bobsCollage.png" alt="Collage" class="collage-thumbnail" onclick="showModal('/assets/images/bobsCollage.png')">
+                </div>
             </section>
+
+            <!-- modal -->
+            <div id="retro-modal" class="retro-modal">
+                <div class="retro-modal-content">
+                    <div class="modal-header">
+                        <span class="modal-title">Image Viewer</span>
+                        <button class="close-button" onclick="closeModal()">X</button>
+                    </div>
+                    <img id="modal-image" src="" alt="Collage">
+                </div>
+            </div>
+
         </div>
      </main>
      <style>
@@ -104,5 +150,6 @@
             -ms-overflow-style: scrollbar;
         }
      </style>
+     <script src="/assets/js/main.js"></script>
 </body>
 </html>

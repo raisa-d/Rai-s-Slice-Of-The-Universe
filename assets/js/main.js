@@ -8,3 +8,16 @@ $(document).ready(function () {
         interactive: true  // Allow mouse interactions
     });
 });
+
+// Popup for collage pictures
+function showModal(imageUrl) {
+    const modal = document.getElementById("retro-modal");
+    const modalImage = document.getElementById("modal-image");
+    modalImage.src = imageUrl;
+    modal.style.display = "flex";
+}
+
+function closeModal() {
+    const modal = document.getElementById("retro-modal");
+    modal.style.display = "none";
+}

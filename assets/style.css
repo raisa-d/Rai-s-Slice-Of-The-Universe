@@ -2,7 +2,7 @@
 * {box-sizing: border-box;}
 
 /* font sizes */
-html {font-size: 62.5%;}
+html {font-size: 62.5%; scroll-behavior: smooth;}
 h1 {font-size: 3.4rem;}
 h2 {font-size: 3.2rem;}
 div, p, ul, ol, li {font-size: 2.4rem;}
@@ -52,6 +52,13 @@ body {
     -webkit-justify-content: space-evenly;
     -ms-justify-content: space-evenly;
     justify-content: space-evenly;
+}
+
+.space-between {
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .space-around {
@@ -106,6 +113,11 @@ body {
     margin:0;
 }
 
+#takeTheBoat, #takeTheBoat + p, #takeTheBoat + p + small {
+    z-index:1;
+    color: white;
+}
+
 #click {
     font-family: monospace; 
     font-size: 1.2rem;
@@ -127,32 +139,31 @@ body {
 }
 
 /* ANIMATIONS */
-#body::after {
+#body::after, #main::after, #main-container::before, #main::before, #div::after, #boat-div::before, #header::before {
     content: '';
     position: absolute;
+    background-size: contain;
+}
+
+
+#body::after {
     top: 60%; 
     left: -15rem;
     width: 20rem;
     height: 20rem;
     background: url('/assets/images/mermaid.gif') no-repeat center center; 
-    background-size: contain;
     animation: swimRight 10s linear infinite;
 }
 
 #main::after {
-    content: '';
-    position: absolute;
     top: 80%; 
     width: 25rem;
     height: 25rem;
-    background: url('/assets/images/merman.webp') no-repeat center center; 
-    background-size: contain;
+    background: url('/assets/images/merman3.webp') no-repeat center center; 
     animation: swimLeft 12s linear infinite;
 }
 
 #main::before {
-    content: '';
-    position: absolute;
     width: 15rem;
     height: 15rem;
     background: url('/assets/images/catmaid.webp') no-repeat center center; 
@@ -161,38 +172,30 @@ body {
     transform: scaleX(-1);
 }
 
-#div::before {
-    content: '';
-    position: absolute;
+#div::before, #main-container::before {
     width: 25rem;
     height: 25rem;
     background: url('/assets/images/mermaid4.webp') no-repeat center center; 
-    background-size: contain;
     animation: swimTopRightToTopLeft 20s linear infinite;
+    z-index: 2;
 }
 
 #div::after {
-    content: '';
-    position: absolute;
     top: 50rem;
     width: 25rem;
     height: 25rem;
     background: url('/assets/images/mermaid5.webp') no-repeat center center; 
-    background-size: contain;
     animation: swimLeftMiddle 10s linear infinite;
 }
 
 #boat-div::before {
-    content: '';
-    position: absolute;
     top: 50rem;
     width: 25rem;
     height: 25rem;
     transform: scaleX(-1);
     background: url('/assets/images/merman2.webp') no-repeat center center; 
     background-size: contain;
-    animation: swimTopRight 12s linear infinite;
-    overflow: hidden   
+    animation: swimTopRight 12s linear infinite; 
 }
 
 /* KEYFRAMES */
@@ -248,7 +251,7 @@ body {
     }
     50% {
         left: 50%;
-        top: 60%;
+        top: 40%;
     }
     100% {
         left: -15rem; 
@@ -277,30 +280,30 @@ body {
     }
     50% {
         left: 60%; 
-        top: 30%; 
+        top: 10%; 
     }
     100% {
         left: -15rem;
-        top: 5%;
+        top: 1%;
     }
 }
 
 /* SLICE OF UNIVERSE PAGE */
-
-/* main h1 */
-#rai {
-    font-size: 6rem;
-    margin:1rem 0;
-}
-
 /* background */
 #bubbles {
     background: url(/assets/images/bubbles.gif);
 }
 
+/* main h1 */
+#rai {
+    font-size: 6rem;
+    margin:1rem 0;
+    letter-spacing: 0.8rem;
+}
+
 /* sections with solid white border */
-.candy-nav, #main-container header, #main-container, .chatbox-container, .the100, .apocalypse, #bio, #garden, .collage-section {
-    border: 1px dashed white;
+.candy-nav, #main-container header, #main-container, .chatbox-container, .the100, .apocalypse, #bio, #garden, .collage-section, .contact-section {
+    border: .1rem dashed white;
 }
 
 #main-container {
@@ -308,7 +311,6 @@ body {
     width: 90rem;
     color: white;
     background: black;
-    /* height: 100dvh; */
 }
 
     #main-container header {
@@ -398,17 +400,20 @@ body {
             background-color: rgb(71, 16, 16);
             height: 12rem;
             width: 12rem;
+            z-index:1;
         }
             .plant {
                 position: relative;
                 height: 12rem;
+                z-index: -1;
             }
             .plant1 {
-                bottom: 4rem;
+                bottom: 4.1rem;
+                left: 1.2rem;
             }
                 .plant2 {
-                    bottom: 4rem;
-                    left: 1.5rem;
+                    bottom: 3.5rem;
+                    left: 1rem;
                 }
 
                     .plant3 {
@@ -437,10 +442,121 @@ body {
             background-size: contain;
         }
 
+/* contact section */
+/* styling target links */
+#contact:target, #collages:target, #bio:target {
+    box-shadow: 0 0 15px 5px rgb(109, 214, 109);
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-color: rgb(109, 214, 109);
+}
+
+    .contact-section h2 {
+        margin:0;
+        font-size: 5.5rem;
+        letter-spacing: 0.3rem;
+        text-align:center;
+    }
+
+        .contact-links, .contact-links a {
+            color: fuchsia;
+            list-style: none;
+            margin:0;
+            padding:0;
+        }
+
+            .contact-links li {
+                font-size: 2.2rem;
+                margin: 1rem 0;
+                text-align:center;
+            }
+
 /* collage section */
 .collage-section {
-    height: 40rem;
+    /* height: 40.5rem; */
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 2rem 2rem 0;
+    text-align: center;
 }
+
+    .collage-section > * {margin:0;}
+        
+        .collage-section p {font-size: 1.6rem;}
+        
+            .collage-container {
+                width: 95%;
+                max-width: 44rem;
+                position: relative;
+            }
+
+            .collage-container img {
+                margin: 0.5rem 0;
+            }
+            
+                .collage-thumbnail {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+
+                    .collage-thumbnail:hover {
+                    transform: scale(1.02);
+                }
+        
+        /* modal */
+        .retro-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+            .retro-modal-content {
+                background: #d9d9d9;
+                border: 2px solid #000;
+                width: 60%;
+                max-width: 800px;
+                padding: 1rem;
+                box-shadow: 5px 5px 0 #000;
+                position: relative;
+                font-family: "Courier New", monospace;
+            }
+
+                .modal-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #0047ab;
+                    color: white;
+                    padding: 5px;
+                    font-size: 14px;
+                }
+
+                    .modal-title {
+                        font-weight: bold;
+                    }
+
+                        .close-button {
+                            background: #d32f2f;
+                            color: white;
+                            border: none;
+                            font-size: 1.6rem;
+                        }
+
+                            .retro-modal img {
+                                width: 100%;
+                                max-height: 80vh;
+                                margin: 1rem auto;
+                                display: block;
+                                border: .1rem solid black;
+                            }
+
 
 /* underwater background */
 #main {
