@@ -2,7 +2,7 @@
 * {box-sizing: border-box;}
 
 /* font sizes */
-html {font-size: 62.5%; scroll-behavior: smooth;}
+html {font-size: 62.5%; scroll-behavior: smooth; overflow-x:hidden;}
 h1 {font-size: 3.4rem;}
 h2 {font-size: 3.2rem;}
 div, p, ul, ol, li {font-size: 2.4rem;}
@@ -173,7 +173,7 @@ body {
     transform: scaleX(-1);
 }
 
-#div::before, #main-container::before {
+#div::before {
     width: 25rem;
     height: 25rem;
     background: url('/assets/images/mermaid4.webp') no-repeat center center; 
@@ -189,6 +189,18 @@ body {
     animation: swimLeftMiddle 10s linear infinite;
 }
 
+#boat-div::before {
+    top: 50rem;
+    width: 25rem;
+    height: 25rem;
+    transform: scaleX(-1);
+    background: url('/assets/images/merman2.webp') no-repeat center center; 
+    background-size: contain;
+    animation: swimTopRight 12s linear infinite; 
+}
+
+/* MERMAIDS ON RAIS SLICE OF UNIVERSE PAGE */
+/* rais universe mermaid */
 .credits-section::before {
     width: 25rem;
     height: 25rem;
@@ -198,6 +210,7 @@ body {
     z-index: 2;
 }
 
+/* rais universe mermaid */
 .the100::before {
     width: 20rem;
     height: 20rem;
@@ -208,6 +221,7 @@ body {
     z-index: 2;
 }
 
+/* rais universe mermaid */
 .collage-section::before {
     width: 25rem;
     height: 25rem;
@@ -225,14 +239,13 @@ body {
     z-index: 2;
 }
 
-#boat-div::before {
-    top: 50rem;
+/* rai's universe mermaid */
+#main-container::before {
     width: 25rem;
     height: 25rem;
-    transform: scaleX(-1);
-    background: url('/assets/images/merman2.webp') no-repeat center center; 
-    background-size: contain;
-    animation: swimTopRight 12s linear infinite; 
+    background: url('/assets/images/mermaid4.webp') no-repeat center center; 
+    animation: swimTopRightToTopLeft 20s linear infinite;
+    z-index: 2;
 }
 
 /* KEYFRAMES */
@@ -358,7 +371,7 @@ body {
 
 @keyframes swimTopRightToTopLeft {
     0% {
-        left: 100%; 
+        left: 85%; 
         top: 10%; 
     }
     50% {
@@ -366,10 +379,11 @@ body {
         top: 10%; 
     }
     100% {
-        left: -15rem;
+        left: 0%;
         top: 1%;
     }
 }
+
 
 @keyframes swimLeftSide {
     0% {
@@ -426,6 +440,7 @@ body {
     background: black;
     min-height: 100vh;
     padding-bottom: 2rem;
+    overflow-x: hidden;
 }
 
     #main-container header {
@@ -496,7 +511,7 @@ body {
 }
 
     #bio p {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         padding: 1rem;
     }
 
@@ -571,7 +586,7 @@ body {
 
     .contact-section h2 {
         margin:0;
-        font-size: 5.5rem;
+        font-size: 5.3rem;
         letter-spacing: 0.3rem;
         text-align:center;
     }
@@ -584,7 +599,7 @@ body {
         }
 
             .contact-links li {
-                font-size: 2.2rem;
+                font-size: 1.7rem;
                 margin: 1rem 0;
                 text-align:center;
             }
@@ -604,7 +619,7 @@ body {
         .credits-section ul {margin: 1.5rem 0; }
 
             .credits-section ul, .credits-section li {
-                font-size: 2rem;
+                font-size: 1.75rem;
                 color: rgb(109, 214, 109);
                 list-style:circle;
             }
@@ -615,7 +630,6 @@ body {
 
 /* collage section */
 .collage-section {
-    /* height: 40.5rem; */
     width: 100%;
     max-width: 44rem;
     margin: 0 2rem 2rem 0;
@@ -673,6 +687,10 @@ body {
             }
 
                 .modal-header {
+                    display: -webkit-box; 
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex; 
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -760,7 +778,7 @@ body {
         }
         
             .credits-section h3 {
-                font-size: 2.2rem; 
+                font-size: 1.8rem; 
                 margin: 0.5rem 0 0.3rem 0;
             }
 
@@ -859,7 +877,15 @@ body {
         }
 
         .chatbox-container {
+            display: -webkit-box; 
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex; 
             display: flex;
+            display: flex;
+            -moz-justify-content: center;
+            -webkit-justify-content: center;
+            -ms-justify-content: center;
             justify-content: center;
             margin-bottom: 2rem;
         }
@@ -868,11 +894,37 @@ body {
             width: 40rem;
         }
 
+        /* stack collage section */
+        #row2 {
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+        }
+
+        .collage-section {
+            margin: 2rem 0;
+            height: 100rem;
+            -moz-justify-content: center;
+            -webkit-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            padding-bottom: 1rem;
+        }
+
     }
 
     @media all and (max-width: 740px) {
-        #main-container {
-            width: 60rem;
+        #bio p {
+            font-size: 1.4rem;
+        }
+
+        .chatbox-container, #chatbox {
+            height: 40rem;
         }
     }
 
@@ -880,25 +932,47 @@ body {
         #main-container {
             width: 50rem;
         }
+
+        #garden {
+            width: 22rem;
+        }
+
+            #plant-row {flex-wrap: wrap;}
+                
+            .plant2, .plant1 {
+                    height: 8rem;
+                }
+
+                 .plant3 {
+                    height: 9rem;
+                }
+
+        #bio p {
+            font-size: 1.3rem;
+        }
+
+        .planter {
+            width: 7rem;
+            height: 7rem;
+        }
     }
 
-    @media all and (max-width: 515px) {
+    @media all and (max-width: 500px) {
+        #main-container {
+            width: 45rem;
+        }
+
+        .collage-section {
+            width: 40rem;
+        }
+    }
+
+    @media all and (max-width: 450px) {
         #main-container {
             width: 40rem;
-            height: 90rem;
         }
-    }
-
-    @media all and (max-width: 430px) {
-        #main-container {
-            width: 35rem;
-            height: 90rem;
-        }
-    }
-
-    @media all and (max-width: 320px) {
-        #main-container {
-            width: 25rem;
-            height: 90rem;
-        }
+        #rai {
+            font-size: 4rem;
+            padding: 0 0.5rem;
+        }      
     }
