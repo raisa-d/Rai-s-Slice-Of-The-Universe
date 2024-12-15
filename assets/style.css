@@ -178,7 +178,7 @@ body {
     width: 25rem;
     height: 25rem;
     background: url('/assets/images/mermaid4.webp') no-repeat center center; 
-    animation: swimTopRightToTopLeft 20s linear infinite;
+    animation: swimTopRightToTopLeft 15s linear infinite;
     z-index: 2;
 }
 
@@ -318,7 +318,7 @@ body {
     }
     50% {
         left: 20%;
-        top: 60%;
+        top: 30%;
     }
     100% {
         left: 100%;
@@ -348,8 +348,9 @@ body {
     }
     50% {
         left: 50%;
-        top: 40%;
+        top: 50%;
     }
+
     100% {
         left: -15rem; 
         top: 70%;
@@ -363,11 +364,11 @@ body {
     }
     50% {
         left: 50%;
-        top: 80%;
+        top: 50%;
     }
     100% {
         left: 100%;
-        top: 150%;}
+        top: 100%;}
 }
 
 @keyframes swimTopRightToTopLeft {
