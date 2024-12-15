@@ -140,7 +140,7 @@ body {
 }
 
 /* ANIMATIONS */
-#body::after, #main::after, #main-container::before, #main::before, #div::after, #boat-div::before, #header::before, .contact-section::before, .credits-section::before, .collage-section::before, .the100::before {
+#body::after, #main::after, #main-container::before, #main::before, #div::after, #div::before, #boat-div::before, #header::before, .contact-section::before, .credits-section::before, .collage-section::before, .the100::before {
     content: '';
     position: absolute;
     background-size: contain;
