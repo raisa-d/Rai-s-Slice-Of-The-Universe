@@ -1,7 +1,7 @@
 # Rai's Slice Of The Universe
 Codedex Mini Holiday Hackathon Submission
 
-For this project, my intention was to follow my creativity and honor my inner child. I wanted to create my slice of the universe where whatever brings me joy can live. A place to info dump about my Autistic special interests, to be myself and let my personality shine. This site is a fortress where’s it’s okay---nay, ENCOURAGED--to be weird and queer.
+Rai's Slice Of The Universe is a place to honor my creativity and inner child. This is where everything that brings me joy will live. A place to info dump about my Autistic special interests, to be myself and let my personality shine. This site is a fortress where’s it’s okay---nay, ENCOURAGED--to be weird and queer.
 
 ## Table of Contents
 - [Features](#features)
