@@ -681,7 +681,7 @@ body {
                 background: #d9d9d9;
                 border: 2px solid #000;
                 width: 60%;
-                max-width: 800px;
+                max-width: 80rem;
                 padding: 1rem;
                 box-shadow: 5px 5px 0 #000;
                 position: relative;
@@ -977,4 +977,40 @@ body {
             font-size: 4rem;
             padding: 0 0.5rem;
         }      
+
+        .candy-link {
+            width: 9rem;
+            height: 9rem;
+            font-size: 1.3rem;
+        }
+
+        #bio, #garden {
+            height: 36rem;
+        }
+
+        #bio p {
+            font-size: 1.3rem;
+        }
+
+        .chatbox-container, #chatbox {
+            width: 30rem;
+            margin: 0 auto 2rem auto;
+        }
+
+        .contact-section, .the100, .credits-section, .collage-section {
+            width: 30rem;
+        }
+        .contact-section, .credits-section {
+            margin: 0 auto;
+        }
+
+        .the100 {margin: 2rem auto;}
+
+        .collage-section{
+            height: 80rem;
+        }
+
+        .retro-modal-content {
+            width: 80%;
+        }
     }
