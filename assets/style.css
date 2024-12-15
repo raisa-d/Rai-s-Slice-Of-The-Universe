@@ -152,7 +152,8 @@ body {
     left: -15rem;
     width: 20rem;
     height: 20rem;
-    background: url('/assets/images/mermaid.gif') no-repeat center center; 
+    transform: scaleX(-1);
+    background: url('/assets/images/mermaid7.webp') no-repeat center center; 
     animation: swimRight 10s linear infinite;
 }
 
