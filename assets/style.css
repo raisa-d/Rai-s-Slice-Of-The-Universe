@@ -178,7 +178,7 @@ body {
     width: 25rem;
     height: 25rem;
     background: url('/assets/images/mermaid4.webp') no-repeat center center; 
-    animation: swimTopRightToTopLeft 15s linear infinite;
+    animation: swimTopRightToTopLeft 12s linear infinite;
     z-index: 2;
 }
 
