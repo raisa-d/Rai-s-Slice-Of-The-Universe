@@ -58,11 +58,12 @@ Phase 3: Development
 - My friend and fellow hackathon member and I worked parallel to each other on the phone and gave each other our suggestions as we went. I really enjoyed this process and having someone to bounce ideas off of and to cheer on.
 
 Phase 4: Testing
-- This is where I started to implement some media queries that I did not originally plan on and I realized that I did not design my HTML in a way that was conducive to a mobile layout. I have a responsive layout for desktop/tablets, but it will definitely look wonky on mobile -- although that makes it all the more 90s. 
+- This is where I started to implement some media queries that I did not originally plan on and I realized that I did not design my HTML in a way that was conducive to a mobile layout. I have a responsive layout for desktop/tablets, but it isn't exactly how I would've pictured it. 
 - I ran into an issue where my mermaid animations were causing automatic scrolling and I went mermaid by mermaid figuring out which part of the animation was causing that to eliminate it. It happened when they went too far on the left side offscreen, so I had to modify those keyframes so they didn't travel so far that that happened.
 
 Phase 5: Launch
 - I decided to host this on Netlify through GitHub.
+- Once I hosted it, I really got to see how it looked and sent it to friends to get their feedback. After I saw it on netlify, I changed the mermaid swimming trajectories and finished media queries on mobile.
 
 ## Lessons Learned
 This was my first ever hackathon, and boy did I learn a LOT!
@@ -70,7 +71,7 @@ This was my first ever hackathon, and boy did I learn a LOT!
 - Hard-coding sizes: Typically, I don't ever hard-code widths/heights, but in this project I did. It made media queries more finnicky than necessary-- in the future, I will stick to using flex proprties to size sections instead of hardcoding them to make it easier for future me.
 - Animations/Keyframes: I finally learned how keyframes works and it wasn't as hard as I imagined! I used them for all of the mermaid swimming patterns!
 - Project Planning: I focused more on development than planning this time around because I was just excited to get my hands dirty. In the end, I am really happy with my result but I do think it would've been easier if I had a more explicit plan.
-- Mobile-First Designs: Next time, I'll draw the mobile layout out before I start coding. In this project, I initially wasn't going to do a mobile layout since it's 90s themed and the 90s sites didn't have that. But then I wanted to add media queries and it was really hard to get things looking right because I didn't write the HTML with that in mind. I will definitely be tryign mobile-first designing and building in the future.
+- Mobile-First Designs: Next time, I'll draw the mobile layout out before I start coding. In this project, I initially wasn't going to do a mobile layout since it's 90s themed and the 90s sites didn't have that. But then I wanted to add media queries and it was really hard to get things looking right because I didn't write the HTML with that in mind. I will definitely be trying mobile-first designing and building in the future.
 - Demo Reels: I have never seen a hackathon demo reel before so it is brand new for me and I had to learn what is expected.
 
 ## Optimizations
