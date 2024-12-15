@@ -23,6 +23,7 @@ Rai's Slice Of The Universe is a place to honor my creativity and inner child. T
   - The 100 infodump section
   - Credits
 - Custom cursors and cursor animation
+- Unique Visitor Counter
 
 ## Technologies Used
 HTML, CSS, Google Drawings for digital collages
