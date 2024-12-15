@@ -1,7 +1,8 @@
 # Rai's Slice Of The Universe
-Codedex Mini Holiday Hackathon Submission
 
 Rai's Slice Of The Universe is a place to honor my creativity and inner child. This is where everything that brings me joy will live. A place to info dump about my Autistic special interests, to be myself and let my personality shine. This site is a fortress where’s it’s okay---nay, ENCOURAGED--to be weird and queer.
+
+This is my submission for the 90s retro themed Codedex Mini Holiday Hackathon!
 
 ## Table of Contents
 - [Features](#features)
@@ -9,6 +10,7 @@ Rai's Slice Of The Universe is a place to honor my creativity and inner child. T
 - [Development Stage](#development-stage)
 - [Lessons Learned](#lessons-learned)
 - [Optimizations](#optimizations)
+- [Credits](#credits)
 - [Contact](#contact)
 
 ## Features
@@ -25,22 +27,11 @@ Rai's Slice Of The Universe is a place to honor my creativity and inner child. T
 - Custom cursors and cursor animation
 
 ## Technologies Used
-HTML, CSS, Google Drawings for digital collages
-
-## Credits
-- Chatbox: [Cbox](https://www.cbox.ws)
-- Water Ripples: [jQuery Ripples Plugin](https://github.com/sirxemic/jquery.ripples/tree/master)
-- Fonts: [1001 Fonts](https://www.1001fonts.com/)
-- Gifs: [GifCities](https://gifcities.org/) and [Giphy](https://giphy.com/)
-- Mermaid Gifs: [Mermaid_Lux on Giphy](https://giphy.com/Mermaid_Lux)
-- [Underwater Background Image](https://unsplash.com/)
-- [Custom Cursors](https://www.cursors-4u.com/)
-- [Bubbles Mouse Effect](https://www.mf2fm.com/rv/)
-- [A Queer Coded This Banner](https://plasticdino.neocities.org/buttons/queer.png)
+HTML, CSS, & JavaScript! I wanted to keep it old-school to be on theme.
 
 ## Development Process
 Phase 1: Gathering Information/Brainstorm
-- I started by searching for as many 90s sites as I could and finding inspiration. My two favorites that I referenced the most were [Cameron's World](https://cameronsworld.net/) and [Plasticdino](https://plasticdino.neocities.org/). 
+- I started by searching for as many 90s sites as I could to find inspiration. My two favorites that I referenced the most were [Cameron's World](https://cameronsworld.net/) and [Plasticdino](https://plasticdino.neocities.org/). 
 - I knew I wanted to create a personal site, the website of my adolescent self's dreams.
 - The night before the hackathon, I was trying to go to bed early. I kept having so many ideas I had to keep going on my phone to write them down. You can find all the ideas I wasn't able to implement under [Optimizations](#optimizations). I do plan to continue this project after the hackathon and to do some or all of them!
 - Before I wireframed, I found a bunch of fonts and gifs I knew I wanted to use which helped with the inspiration.
@@ -111,6 +102,18 @@ Future Directions/Next Steps:
 - Board game map where the sepcial squares are navs
 - Tea party dining table set, tea cups are navs
 - Page with lesbian flag colors
+
+## Credits
+- Chatbox: [Cbox](https://www.cbox.ws)
+- Water Ripples: [jQuery Ripples Plugin](https://github.com/sirxemic/jquery.ripples/tree/master)
+- Fonts: [1001 Fonts](https://www.1001fonts.com/)
+- Gifs: [GifCities](https://gifcities.org/) and [Giphy](https://giphy.com/)
+- Mermaid Gifs: [Mermaid_Lux on Giphy](https://giphy.com/Mermaid_Lux)
+- [Underwater Background Image](https://unsplash.com/)
+- [Custom Cursors](https://www.cursors-4u.com/)
+- [Bubbles Mouse Effect](https://www.mf2fm.com/rv/)
+- [A Queer Coded This Banner](https://plasticdino.neocities.org/buttons/queer.png)
+- Inspiration: [Cameron's World](https://cameronsworld.net/) and [Plasticdino](https://plasticdino.neocities.org/)
 
 ## Contact
 <p> 
