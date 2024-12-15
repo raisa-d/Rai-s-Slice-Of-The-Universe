@@ -696,7 +696,7 @@ body {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    background: #0047ab;
+                    background: rgb(211, 37, 211);
                     color: white;
                     padding: 5px;
                     font-size: 14px;
@@ -707,8 +707,8 @@ body {
                     }
 
                         .close-button {
-                            background: #d32f2f;
-                            color: white;
+                            background: #ccc;
+                            color: black;
                             border: none;
                             font-size: 1.6rem;
                         }
