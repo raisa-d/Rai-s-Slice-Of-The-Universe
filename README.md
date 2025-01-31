@@ -1,5 +1,7 @@
-# Rai's Slice Of The Universe
-
+<h1 align="center">Rai's Slice Of The Universe</h1>
+<p align="center">
+<img width="700" alt="rais-slice" src="https://github.com/user-attachments/assets/f2d2efca-2080-4ff3-aa9c-add3689fc293" />
+</p>
 Rai's Slice Of The Universe is a place to honor my creativity and inner child. This is where everything that brings me joy will live. A place to info dump about my Autistic special interests, to be myself and let my personality shine. This site is a fortress where’s it’s okay---nay, ENCOURAGED--to be weird and queer.
 
 This is my submission for the 90s retro themed Codedex Mini Holiday Hackathon!
@@ -29,7 +31,7 @@ This is my submission for the 90s retro themed Codedex Mini Holiday Hackathon!
 ## Technologies Used
 HTML, CSS, & JavaScript! I wanted to keep it old-school to be on theme.
 
-## Development Process
+## Development Stage
 Phase 1: Gathering Information/Brainstorm
 - I started by searching for as many 90s sites as I could to find inspiration. My two favorites that I referenced the most were [Cameron's World](https://cameronsworld.net/) and [Plasticdino](https://plasticdino.neocities.org/). 
 - I knew I wanted to create a personal site, the website of my adolescent self's dreams.
